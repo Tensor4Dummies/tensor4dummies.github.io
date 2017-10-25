@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/favicon.ico">
+    <link rel="icon" href="docs/img/tensor.png">
 
     <title>Tensor4dummies</title>
 
@@ -40,10 +40,10 @@
       </div>
       <div class="navbar navbar-dark bg-dark">
         <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand">Tensor4dummies</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Control de navegación">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <a href="#" class="navbar-brand">Tensor4dummies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Control de navegación">
+        <span class="navbar-toggler-icon"></span>
+        </button>
         </div>
       </div>
     </header>
@@ -52,7 +52,8 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Tensor4dummies | tensores</h1>
+            <div class="bg"></div>
+          <h1 class="jumbotron-heading text-white">Tensor4dummies | tensores</h1>
           <p class="lead text-muted">Aprendizaje de Tensorflow para programadores. Todo lo que necesitas saber sobre tensores en español.</p>
           <p>
             <a href="#" class="btn btn-primary">Ver repositorio en Github</a>
@@ -96,11 +97,15 @@
     <script src="docs/js/popper.min.js"></script>
     <script src="docs/js/bootstrap.min.js"></script>
     <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
+        var jumboHeight = $('.bg').outerHeight();
+        function parallax(){
+        var scrolled = $(window).scrollTop();
+            $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+        }
+
+        $(window).scroll(function(e){
+        parallax();
+        });
     </script>
   </body>
 </html>
