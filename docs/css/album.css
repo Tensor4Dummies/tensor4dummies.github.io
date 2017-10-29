@@ -40,7 +40,6 @@
 
 .card {
   float: left;
-  width: 33.333%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -50,12 +49,14 @@
   margin-bottom: .75rem;
 }
 
-.card-text {
-  font-size: 85%;
-}
-
 .text-white-custom{
     color: #fff !important;
+}
+
+.btn-custom{
+    color: #fff;
+    background-color: #df913f;
+    border-color: #df913f;
 }
 
 footer {
