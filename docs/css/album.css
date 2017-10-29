@@ -59,6 +59,12 @@
     border-color: #df913f;
 }
 
+.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
