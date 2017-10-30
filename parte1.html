@@ -24,7 +24,7 @@
           <div class="row">
             <div class="col-sm-8 py-4">
               <h4 class="text-white">Sobre nosotros</h4>
-              <p class="text-muted">El proyecto está desarrollado por un grupo de estudiantes de Ingeniería Informática de la Universidad de León.
+              <p class="text-muted">El proyecto está desarrollado por un grupo de estudiantes de Ingeniería Informática de la Universidad de Le&oacute;n.
                   La idea ha surgido para poder acercar los conocimientos de Tensorflow a cualquier persona con la mínima dificultad posible.
                   <br/>
                   <a href="https://github.com/tensor4dummies" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @tensor4dummies</a>
@@ -45,7 +45,7 @@
       <div class="navbar navbar-dark bg-dark fixed">
         <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand">Tensor4Dummies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Control de navegación">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Control de navegaci&oacute;n">
         <span class="navbar-toggler-icon"></span>
         </button>
         </div>
@@ -57,10 +57,10 @@
       <section class="jumbotron text-center">
         <div class="container">
             <div class="bg"></div>
-          <h1 class="jumbotron-heading">Tensor4Dummies | tensores</h1>
-          <p class="lead text-muted">Aprendizaje de Tensorflow para programadores. Todo lo que necesitas saber sobre tensores en español.</p>
+          <h1 class="jumbotron-heading">Tensor4Dummies | Parte 1: Tensores</h1>
+          <p class="lead text-muted">El primer contacto con Tensorflow mediante su unidad fundamental: "tensor". Todas sus caracter&iacute;sticas y tipos.</p>
           <p>
-            <a href="https://github.com/Tensor4Dummies" class="btn btn-primary" target="_blank">Ver repositorio en Github</a>
+            <a href="https://github.com/Tensor4Dummies/1_tensores" class="btn btn-primary" target="_blank">Ver repositorio en Github</a>
             <a href="#" class="btn btn-secondary">Ver canal de YouTube</a>
           </p>
         </div>
@@ -72,44 +72,33 @@
           <div class="row">
             <div class="col-lg-4 card">
               <img src="docs/img/parte_1.jpg" alt="Parte 1">
-              <h2>Introducción</h2>
-              <p>Conoce qui&eacute;nes somos y qu&eacute; puedes aprender en nuestro tutorial.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button">Acceder al video »</a></p>
+              <h2>Caracter&iacute;sticas de los tensores</h2>
+              <p>Hablaremos de las tres características de un tensor: rango, forma y tipo de datos.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(1)">Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
-              <img src="docs/img/parte_2.jpg" alt="Parte 2">
-              <h2>Parte 1: Tensores</h2>
-              <p>El primer contacto con Tensorflow mediante su unidad fundamental: "tensor". Todas sus caracter&iacute;sticas y tipos.</p>
-              <p><a class="btn btn-custom" href="https://github.com/Tensor4Dummies/1_tensores" target="_blank" role="button">Ver en Github »</a>
-              <a class="btn btn-custom" href="parte1.html" role="button">Qu&eacute; encontrar »</a></p>
+              <img src="docs/img/parte_1.jpg" alt="Parte 1">
+              <h2>Tipos de tensores</h2>
+              <p>Hablaremos de los tres tipos de tensores: constantes, placeholders y variables. Además de c&oacute;mo crearlos.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(2)">Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
-              <img src="docs/img/parte_3.jpg" alt="Parte 3">
-              <h2>Parte 2: Tensorboard</h2>
-              <p>Aprende a usar la herramienta Tensorboard para visualizar los grafos, gr&aacute;ficas y dem&aacute;s de tus programas.</p>
-              <p><a class="btn btn-custom" href="https://github.com/Tensor4Dummies/2_tensorboard" role="button" target="_blank">Ver en Github »</a>
-              <a class="btn btn-custom" href="#" role="button">Qu&eacute; encontrar »</a></p>
+              <img src="docs/img/parte_1.jpg" alt="Parte 1">
+              <h2>Constantes</h2>
+              <p>Ejemplo de c&oacute;digo a cerca de las constantes.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(3)">Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
-              <img src="docs/img/parte_3.jpg" alt="Parte 3">
-              <h2>Parte 3: Regresión lineal</h2>
-              <p>Aprende a usar la herramienta Tensorboard para visualizar los grafos, gr&aacute;ficas y dem&aacute;s de tus programas.</p>
-              <p><a class="btn btn-custom" href="https://github.com/Tensor4Dummies/3_Regresion_Lineal" role="button" target="_blank">Ver en Github »</a>
-              <a class="btn btn-custom" href="#" role="button">Qu&eacute; encontrar »</a></p>
+              <img src="docs/img/parte_1.jpg" alt="Parte 1">
+              <h2>Placeholder</h2>
+              <p>Ejemplo de c&oacute;digo de los placeholders y su asignaci&oacute;n de datos en cada ejecuci&oacute;n.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(4)">Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
-              <img src="docs/img/parte_3.jpg" alt="Parte 3">
-              <h2>Parte 4: Clustering</h2>
-              <p>Aprende a usar la herramienta Tensorboard para visualizar los grafos, gr&aacute;ficas y dem&aacute;s de tus programas.</p>
-              <p><a class="btn btn-custom" href="https://github.com/Tensor4Dummies/4_clustering" role="button" target="_blank">Ver en Github »</a>
-              <a class="btn btn-custom" href="#" role="button">Qu&eacute; encontrar »</a></p>
-            </div>
-            <div class="col-lg-4 card">
-              <img src="docs/img/parte_3.jpg" alt="Parte 3">
-              <h2>Parte 5: Im&aacute;genes</h2>
-              <p>Aprende a usar la herramienta Tensorboard para visualizar los grafos, gr&aacute;ficas y dem&aacute;s de tus programas.</p>
-              <p><a class="btn btn-custom" href="https://github.com/Tensor4Dummies/5_img_mnist" role="button" target="_blank">Ver en Github »</a>
-              <a class="btn btn-custom" href="#" role="button">Qu&eacute; encontrar »</a></p>
+              <img src="docs/img/parte_1.jpg" alt="Parte 1">
+              <h2>Variables</h2>
+              <p>Ejemplo de c&oacute;digo para una variable y su reasignaci&oacute;n en cada ejecuci&oacute;n.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(5)">Ver el video »</a></p>
             </div>
           </div>
 
@@ -119,6 +108,18 @@
       <div id="videos">
         <div class="container">
           <div class="embed-responsive embed-responsive-16by9" id="video1">
+            <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9" id="video2">
+            <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9" id="video3">
+            <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9" id="video4">
+            <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9" id="video5">
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
         </div>
@@ -150,7 +151,7 @@
         parallax();
         });
         function showVideo(number){
-          for (i = 1; i < 2; i++) {
+          for (i = 1; i < 6; i++) {
               document.getElementById("video"+i).style.display = "none";
           }
           document.getElementById("video"+number).style.display = "block";
