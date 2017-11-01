@@ -74,31 +74,31 @@
               <img src="docs/img/parte_1/intro-1-caracteristicas.png" alt="Parte 1">
               <h2>Caracter&iacute;sticas de los tensores</h2>
               <p>Hablaremos de las tres características de un tensor: rango, forma y tipo de datos.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(1)">Ver el video »</a></p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='1'>Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
               <img src="docs/img/parte_1/intro-1-tipos.png" alt="Parte 1">
               <h2>Tipos de tensores</h2>
               <p>Hablaremos de los tres tipos de tensores: constantes, placeholders y variables. Además de c&oacute;mo crearlos.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(2)">Ver el video »</a></p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='2'>Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
               <img src="docs/img/parte_1/intro-1-constantes.png" alt="Parte 1">
               <h2>Constantes</h2>
               <p>Ejemplo de c&oacute;digo a cerca de las constantes.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(3)">Ver el video »</a></p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='3'>Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
               <img src="docs/img/parte_1/intro-1-placeholders.png" alt="Parte 1">
               <h2>Placeholder</h2>
               <p>Ejemplo de c&oacute;digo de los placeholders y su asignaci&oacute;n de datos en cada ejecuci&oacute;n.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(4)">Ver el video »</a></p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='4'>Ver el video »</a></p>
             </div>
             <div class="col-lg-4 card">
               <img src="docs/img/parte_1/intro-1-variables.png" alt="Parte 1">
               <h2>Variables</h2>
               <p>Ejemplo de c&oacute;digo para una variable y su reasignaci&oacute;n en cada ejecuci&oacute;n.</p>
-              <p><a class="btn btn-custom" href="#videos" role="button" onclick="showVideo(5)">Ver el video »</a></p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='5'>Ver el video »</a></p>
             </div>
           </div>
 
@@ -107,19 +107,19 @@
 
       <div id="videos">
         <div class="container">
-          <div class="embed-responsive embed-responsive-16by9" id="video1">
+          <div class="embed-responsive embed-responsive-16by9 video-container" id="video1" style="display:none";>
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9" id="video2">
+          <div class="embed-responsive embed-responsive-16by9 video-container" id="video2" style="display:none";>
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9" id="video3">
+          <div class="embed-responsive embed-responsive-16by9 video-container" id="video3" style="display:none";>
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9" id="video4">
+          <div class="embed-responsive embed-responsive-16by9 video-container" id="video4" style="display:none";>
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
-          <div class="embed-responsive embed-responsive-16by9" id="video5">
+          <div class="embed-responsive embed-responsive-16by9 video-container" id="video5" style="display:none";>
             <iframe src="https://www.youtube.com/embed/SJDEOWLHYVo" allowfullscreen></iframe>
           </div>
         </div>
@@ -135,27 +135,10 @@
         <p>By <a href="https://github.com/0x0soir"><i class="fa fa-github" aria-hidden="true"></i> @0x0soir</a> & <a href="https://github.com/vrdelc"><i class="fa fa-github" aria-hidden="true"></i> @vrdel</a> mediante Bootstrap</p>
       </div>
     </footer>
-    <script src="docs/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="docs/js/popper.min.js"></script>
     <script src="docs/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/5b1ea1040d.js"></script>
-    <script>
-        showVideo(0);
-        var jumboHeight = $('.bg').outerHeight();
-        function parallax(){
-        var scrolled = $(window).scrollTop();
-            $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-        }
-
-        $(window).scroll(function(e){
-        parallax();
-        });
-        function showVideo(number){
-          for (i = 1; i < 6; i++) {
-              document.getElementById("video"+i).style.display = "none";
-          }
-          document.getElementById("video"+number).style.display = "block";
-        }
-    </script>
+    <script src="docs/js/tensor.js"></script>
   </body>
 </html>
