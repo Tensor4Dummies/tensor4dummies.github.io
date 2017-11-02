@@ -19,7 +19,11 @@ $('a[data-video-id]').click(function(event) {
   $(".video-container").each(function(){
       $(this).hide();
   });
+  $(".list-group-item").each(function(){
+      $(this).removeClass('active');
+  });
   if ($clickAttribute){
       $('#video'+$clickAttribute).fadeIn('slow');
+      $('#item'+$clickAttribute).addClass('active');
   }
 });

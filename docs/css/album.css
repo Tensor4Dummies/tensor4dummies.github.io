@@ -73,3 +73,32 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.list-group-item.active{
+  color: #fff !important;
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+}
+
+.list-group-item{
+  color: #ef6c00 !important;
+  text-align: center;
+}
+
+.content-bar{
+  width: 25%;
+}
+
+.content-video{
+  width: 75%;
+  height: 100%;
+}
+
+.container-videos{
+  display:inline-block;
+  width: 100%;
+}
+
+.sidebar-offcanvas{
+  max-width: 100%;
+}
