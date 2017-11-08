@@ -86,12 +86,13 @@ footer p {
 }
 
 .content-bar{
-  width: 25%;
+  width: 30%;
 }
 
 .content-video{
-  width: 75%;
+  width: 70%;
   height: 100%;
+  max-width: 60rem !important;
 }
 
 .container-videos{
