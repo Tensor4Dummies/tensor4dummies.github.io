@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="docs/img/tensor.png">
+
+    <title>Parte 3: Regresi&oacute;n lineal | Tensor4Dummies</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="docs/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="docs/css/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark fixed" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 py-4">
+              <h4 class="text-white">Sobre nosotros</h4>
+              <p class="text-muted">El proyecto est&aacute; desarrollado por un grupo de estudiantes de Ingenier&iacute;a Inform&aacute;tica de la Universidad de Le&oacute;n.
+                  La idea ha surgido para poder acercar los conocimientos de Tensorflow a cualquier persona con la m&iacute;nima dificultad posible.
+                  <br/>
+                  <a href="https://github.com/tensor4dummies" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @tensor4dummies</a>
+              </p>
+            </div>
+            <div class="col-sm-4 py-4">
+              <h4 class="text-white">Contacto</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://github.com/0x0soir" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @0x0soir</a></li>
+                <li><a href="https://github.com/jmar86" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @jmar86</a></li>
+                <li><a href="https://github.com/marinasainz" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @marinasainz</a></li>
+                <li><a href="https://github.com/vrdelc" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> @vrdelc</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark fixed">
+        <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand">Tensor4Dummies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Control de navegaci&oacute;n">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+            <div class="bg"></div>
+          <h1 class="jumbotron-heading">Tensor4Dummies | Parte 3: Regresi&oacute;n lineal</h1>
+          <p class="lead text-muted">C&aacute;lculo de la ecuaci&oacute;n de la recta que se ajuste lo m&aacute;ximo posible dados unos puntos en coordenadas X y Y.</p>
+          <p>
+            <a href="https://github.com/Tensor4Dummies/1_tensores" class="btn btn-primary" target="_blank">Ver repositorio en Github</a>
+            <a href="https://www.youtube.com/channel/UCsXbYZd-Yqbws1m8QwH_fgA" class="btn btn-secondary" target="_blank">Ver canal de YouTube</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album text-muted">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-4 card">
+              <img src="docs/img/parte_3/intro-3-regresion-algoritmo.png" alt="Parte 1">
+              <h2>Introducci&oacute;n a la regresi&oacute;n lineal</h2>
+              <p>Introducci&oacute;n a la regresi&oacute;n lineal. &iacute;ndice del tutorial. Explicaci&oacute;n te&oacute;rica de regresi&oacute;n lineal y sus tipos, simples y compuesto.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='1'>Ver el video »</a></p>
+            </div>
+            <div class="col-lg-4 card">
+              <img src="docs/img/parte_3/intro-3-regresion-ejercicio.png" alt="Parte 2">
+              <h2>Ejercicio simple</h2>
+              <p>Segunda parte de la regresi&oacute;n lineal. Ejemplo b&aacute;sico de regresi&oacute;n lineal simple explicado paso a paso.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='2'>Ver el video »</a></p>
+            </div>
+            <div class="col-lg-4 card">
+              <img src="docs/img/parte_3/intro-3-regresion-intro.png" alt="Parte 3">
+              <h2>Algoritmo y gr&aacute;ficas</h2>
+              <p>Ejemplo de regresi&oacute;n lineal simple realizado con Tensorflow. En el v&iacute;deo se muestran dos ejemplos, uno es el ejercicio del v&iacute;deo anterior y el segundo es un ejemplo con puntos creados aleatoriamente.</p>
+              <p><a class="btn btn-custom" href="#videos" role="button" data-video-id='3'>Ver el video »</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container" >
+        <div id="videos" class="container-videos">
+          <div class="content-bar float-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group">
+                  <a href="#videos" class="list-group-item active" data-video-id='1' id="item1">Introducci&oacute;n a la regresi&oacute;n lineal</a>
+                  <a href="#videos" class="list-group-item" data-video-id='2'  id="item2">Ejercicio simple</a>
+                  <a href="#videos" class="list-group-item" data-video-id='3'  id="item3">Algoritmo y gr&aacute;ficas</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="content-video float-left">
+            <div class="embed-responsive embed-responsive-16by9 video-container" id="video1">
+              <iframe src="https://www.youtube.com/embed/J3Sw1Z2rVmc" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9 video-container" id="video2" style="display:none";>
+              <iframe src="https://www.youtube.com/embed/tsjcrtCyraE" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9 video-container" id="video3" style="display:none";>
+              <iframe src="https://www.youtube.com/embed/6ayzBy7U4A4" allowfullscreen></iframe>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <span>
+      <footer class="text-muted">
+        <div class="container">
+          <p class="float-right">
+            <a href="#">Volver arriba</a>
+          </p>
+          <p>By <a href="https://github.com/0x0soir"><i class="fa fa-github" aria-hidden="true"></i> @0x0soir</a> & <a href="https://github.com/vrdelc"><i class="fa fa-github" aria-hidden="true"></i> @vrdel</a> mediante Bootstrap</p>
+        </div>
+      </footer>
+    </span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="docs/js/popper.min.js"></script>
+    <script src="docs/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/5b1ea1040d.js"></script>
+    <script src="docs/js/tensor.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109094795-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109094795-1');
+    </script>
+  </body>
+</html>
